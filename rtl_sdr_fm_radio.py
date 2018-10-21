@@ -5,7 +5,7 @@
 # Title: Wideband FM Receiver 1.0
 # Author: Prasad Tengse
 # Description: Wideband FM Receiver for RTL SRD Radio. Options to Tune several parameters.
-# Generated: Sun Oct 21 03:28:53 2018
+# Generated: Sun Oct 21 03:46:42 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -16,7 +16,7 @@ if __name__ == '__main__':
             x11 = ctypes.cdll.LoadLibrary('libX11.so')
             x11.XInitThreads()
         except:
-            print ("Warning: failed to XInitThreads")
+            print "Warning: failed to XInitThreads()"
 
 from gnuradio import analog
 from gnuradio import audio
